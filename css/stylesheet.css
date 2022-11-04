@@ -16,7 +16,7 @@ aside{
     background-color:#F9F3EC;
 }
 
-main{
+article{
     grid-column:2/3;
     background-color:#E7CEB1;
 }
@@ -27,7 +27,7 @@ header h1{
 header h2{
     text-align:center;
 }
-main div{
+article div{
     display:grid;
 }
 .aboutdocs{
@@ -40,24 +40,34 @@ main div{
     justify-content: right;
 }
 .flex1{
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
+.flex1 div:first-child{
+    grid-column:0/1;
+}
+
+.flex1 div:last-child{
+    grid-column: 2/3;
+    display:flex;
+    justify-content: flex-end;
+}
+
 .button1{
-border-radius: 10px;
+border-radius: 15%;
   background: #55869B;
   padding:10px; 
-  width:66px;
-  height:15px;
+  width:35%;
   margin-left:12px;
   margin-top:10px; 
+  
 }
 .button2{
-    border-radius: 10px;
+    border-radius: 15%;
       background: #6F6A87;
       padding:10px; 
-      width:81px;
-      height:15px; 
+      width:42%;
       margin-right:12px;
       margin-top:10px;
     }
@@ -65,8 +75,4 @@ ul li{
     list-style:square;
     color:#55869B;
 
-}
-.flex2 style{
-    display:flex;
-    justify-content: space-around;
 }
