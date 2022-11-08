@@ -13,12 +13,10 @@ html{
 
 h1 {
     color: #55869B;
-    font-family: 'Kanit', sans-serif;
 }
 
 h2 {
     color: #55869B;
-    font-family: 'Kanit', sans-serif;
 }
 
 aside {
@@ -38,7 +36,6 @@ header {
 }
 
 .aboutdocs {
-    display: inline-flex;
     color: #55869B;
     margin: 1%;
 }
