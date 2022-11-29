@@ -78,3 +78,13 @@ function savenote(){
     newLi.appendChild(txtContent);
     uL.appendChild(newLi)
  }
+
+ function savednoteDisplay(e){
+    savename = e.target.innerText
+    notesArray.forEach((title) => {
+        if (title.title == savename){
+            savedcontent = (title['body'])
+            txtarea.value = savedcontent
+        } 
+    });
+}
