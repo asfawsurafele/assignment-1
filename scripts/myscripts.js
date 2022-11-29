@@ -55,3 +55,18 @@ function cancelremove(){
     counter = counter + 1
     }
 }
+function createnote(){
+    if (counter === 1) {
+    // txtarea.value = '';
+    cancelbutton.classList.toggle('hidden');
+    savebutton.classList.toggle('hidden');
+    txtarea.classList.toggle('hidden');
+    txtbox.classList.toggle('hidden');
+    counter = counter - 1   
+    }
+    else{
+        if (textlength< 1){
+        txtarea.value = ''  
+        }
+    }
+}
