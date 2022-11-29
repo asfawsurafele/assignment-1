@@ -88,3 +88,8 @@ function savenote(){
         } 
     });
 }
+drkbutton.addEventListener('click', darktheme1);
+cancelbutton.addEventListener('click', cancelremove);
+newnotebutt.addEventListener('click', createnote);
+savebutton.addEventListener('click', savenote);
+uL.addEventListener('click',savednoteDisplay);
