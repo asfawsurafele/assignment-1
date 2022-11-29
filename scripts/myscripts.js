@@ -70,3 +70,11 @@ function createnote(){
         }
     }
 }
+function savenote(){
+    let titlename = prompt('What would you like to name this save as?:');
+    notesArray.push({title: titlename, body: txtarea.value});
+    let newLi = document.createElement('li');
+    let txtContent = document.createTextNode(titlename);
+    newLi.appendChild(txtContent);
+    uL.appendChild(newLi)
+ }
