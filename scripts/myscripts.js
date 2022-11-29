@@ -46,3 +46,12 @@ function darktheme1(){
     mynotestxt1.classList.toggle('textwhite');
     mynotestxt2.classList.toggle('textwhite');
 }
+function cancelremove(){
+    if (counter === 0){
+    cancelbutton.classList.toggle('hidden');
+    savebutton.classList.toggle('hidden');
+    txtarea.classList.toggle('hidden');
+    txtbox.classList.toggle('hidden');
+    counter = counter + 1
+    }
+}
