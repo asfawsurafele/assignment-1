@@ -57,7 +57,6 @@ function cancelremove(){
 }
 function createnote(){
     if (counter === 1) {
-    // txtarea.value = '';
     cancelbutton.classList.toggle('hidden');
     savebutton.classList.toggle('hidden');
     txtarea.classList.toggle('hidden');

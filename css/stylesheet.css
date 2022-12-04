@@ -1,7 +1,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 0fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.5fr;
     margin:0;
     height:100vh;
@@ -21,7 +21,7 @@ h2 {
 }
 
 aside {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2/3;
     margin-top:4%;
     background-color: #F9F3EC;
@@ -30,7 +30,7 @@ aside {
 }
 
 article {
-    grid-column: 2/3;
+    grid-column: 1;
     background-color: #E7CEB1;
 }
 
@@ -150,7 +150,7 @@ footer div{
 
 footer {
     grid-row:3;
-    grid-column:2;
+    grid-column:1;
 }
 .ta {
     color: black
@@ -164,6 +164,9 @@ footer {
         grid-column: 1/2;
         grid-row: 1/4;
         margin-top:0%;
+    }
+    footer{
+        grid-column: 2;
     }
 }
 
